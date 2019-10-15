@@ -1,0 +1,14 @@
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\bin\Debug\netcoreapp2.2\OA.Repository.deps.json
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\bin\Debug\netcoreapp2.2\OA.Repository.runtimeconfig.json
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\bin\Debug\netcoreapp2.2\OA.Repository.runtimeconfig.dev.json
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\bin\Debug\netcoreapp2.2\OA.Repository.dll
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\bin\Debug\netcoreapp2.2\OA.Repository.pdb
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\bin\Debug\netcoreapp2.2\OA.Data.dll
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\bin\Debug\netcoreapp2.2\OA.Data.pdb
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\obj\Debug\netcoreapp2.2\OA.Repository.csprojAssemblyReference.cache
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\obj\Debug\netcoreapp2.2\OA.Repository.csproj.CoreCompileInputs.cache
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\obj\Debug\netcoreapp2.2\OA.Repository.AssemblyInfoInputs.cache
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\obj\Debug\netcoreapp2.2\OA.Repository.AssemblyInfo.cs
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\obj\Debug\netcoreapp2.2\OA.Repository.csproj.CopyComplete
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\obj\Debug\netcoreapp2.2\OA.Repository.dll
+C:\Users\GSA\source\repos\OnionDemo\OA.Repository\obj\Debug\netcoreapp2.2\OA.Repository.pdb
