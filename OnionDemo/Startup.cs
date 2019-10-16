@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using OA.Repository;
+using OA.Service;
 
 namespace OnionDemo
 {
@@ -31,6 +32,8 @@ namespace OnionDemo
 
             services.AddDbContext<ApplicationContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped(typeof(IProductRepo<>), typeof(ProductRepo<>));
+            services.AddTransient<IProductService, ProductService>();
 
             //services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //services.AddScoped(typeof(IRepository<>), typeof(Repository<>));

@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OA.Service;
+using OA.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace OnionDemo.Controllers
 {
@@ -11,17 +12,25 @@ namespace OnionDemo.Controllers
     [ApiController]
     public class TestController : ControllerBase
     {
-        private readonly OA.Service.IProductService _productService;
+        private readonly IProductService _productService;
 
-        public TestController(OA.Service.IProductService productService)
+        public TestController(IProductService productService )
         {
-            _productService = productService;
+            try
+            {
+                _productService = productService;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-
+            
             return new string[] { "value1", "value2", "value3", "value4" };
         }
     }

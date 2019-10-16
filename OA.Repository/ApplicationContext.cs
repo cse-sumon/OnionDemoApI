@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OA.Data;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,5 +17,6 @@ namespace OA.Repository
             base.OnModelCreating(modelBuilder);
             new ProductMap(modelBuilder.Entity<Product>());
         }
+        //public DbSet<Product> Products { get; set; }
     }
 }
