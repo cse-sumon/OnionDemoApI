@@ -18,6 +18,23 @@ namespace OA.Repository.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("OA.Data.Course", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CourseCode")
+                        .IsRequired();
+
+                    b.Property<string>("CourseTitle")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Courses");
+                });
+
             modelBuilder.Entity("OA.Data.Product", b =>
                 {
                     b.Property<int>("Id")

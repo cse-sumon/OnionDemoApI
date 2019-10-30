@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionDemo", "OnionDemo\OnionDemo.csproj", "{70F4E551-89A3-42DC-A290-2E9C7501A988}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionDemo", "OnionDemo\OnionDemo.csproj", "{70F4E551-89A3-42DC-A290-2E9C7501A988}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Data", "OA.Data\OA.Data.csproj", "{093CB2F6-ED44-4ABE-B1CB-113D5BC165C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OA.Data", "OA.Data\OA.Data.csproj", "{093CB2F6-ED44-4ABE-B1CB-113D5BC165C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Repository", "OA.Repository\OA.Repository.csproj", "{157B9169-DB52-4823-B086-881389331666}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OA.Repository", "OA.Repository\OA.Repository.csproj", "{157B9169-DB52-4823-B086-881389331666}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Service", "OA.Service\OA.Service.csproj", "{1C5165A8-975B-41C3-93C6-5FA03B1A92F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OA.Service", "OA.Service\OA.Service.csproj", "{1C5165A8-975B-41C3-93C6-5FA03B1A92F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject", "XUnitTestProject\XUnitTestProject.csproj", "{0D6BF246-9E62-4C9D-B278-CE85F5C1BFFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1C5165A8-975B-41C3-93C6-5FA03B1A92F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C5165A8-975B-41C3-93C6-5FA03B1A92F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C5165A8-975B-41C3-93C6-5FA03B1A92F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D6BF246-9E62-4C9D-B278-CE85F5C1BFFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6BF246-9E62-4C9D-B278-CE85F5C1BFFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6BF246-9E62-4C9D-B278-CE85F5C1BFFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6BF246-9E62-4C9D-B278-CE85F5C1BFFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

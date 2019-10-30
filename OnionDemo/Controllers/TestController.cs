@@ -12,26 +12,31 @@ namespace OnionDemo.Controllers
     [ApiController]
     public class TestController : ControllerBase
     {
-        private readonly IProductService _productService;
+        private readonly List<Course> course;
 
-        public TestController(IProductService productService )
+        public TestController()
         {
-            try
+           course = new List<Course>()
             {
-                _productService = productService;
-            }
-            catch (Exception)
-            {
+                new Course(){Id=1, CourseCode="CSE-101",CourseTitle="Programming C"},
+                new Course(){Id=2, CourseCode="CSE-102",CourseTitle="Algorithm"},
+                new Course(){Id=3, CourseCode="CSE-103",CourseTitle="Data Structure"}
 
-                throw;
-            }
+            };
+
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public IEnumerable<Course> GetAllItems()
         {
-            
-            return new string[] { "value1", "value2", "value3", "value4" };
+            return course;
         }
+
+        [HttpGet]
+        public Course GetAllItem(int id)
+        {
+           return course.Where(c=>c.Id==id).FirstOrDefault();
+        }
+
     }
 }

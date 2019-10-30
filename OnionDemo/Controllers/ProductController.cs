@@ -21,6 +21,10 @@ namespace OnionDemo.Controllers
                 _productService = productService;
         }
 
+        public ProductController()
+        {
+        }
+
         [HttpGet]
         public IActionResult Get()
         {

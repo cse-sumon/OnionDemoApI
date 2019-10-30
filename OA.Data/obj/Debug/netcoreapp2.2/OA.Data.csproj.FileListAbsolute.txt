@@ -3,6 +3,7 @@ C:\Users\GSA\source\repos\OnionDemo\OA.Data\bin\Debug\netcoreapp2.2\OA.Data.dll
 C:\Users\GSA\source\repos\OnionDemo\OA.Data\bin\Debug\netcoreapp2.2\OA.Data.pdb
 C:\Users\GSA\source\repos\OnionDemo\OA.Data\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.dll
 C:\Users\GSA\source\repos\OnionDemo\OA.Data\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.xml
+C:\Users\GSA\source\repos\OnionDemo\OA.Data\obj\Debug\netcoreapp2.2\OA.Data.csprojAssemblyReference.cache
 C:\Users\GSA\source\repos\OnionDemo\OA.Data\obj\Debug\netcoreapp2.2\OA.Data.csproj.CoreCompileInputs.cache
 C:\Users\GSA\source\repos\OnionDemo\OA.Data\obj\Debug\netcoreapp2.2\OA.Data.AssemblyInfoInputs.cache
 C:\Users\GSA\source\repos\OnionDemo\OA.Data\obj\Debug\netcoreapp2.2\OA.Data.AssemblyInfo.cs

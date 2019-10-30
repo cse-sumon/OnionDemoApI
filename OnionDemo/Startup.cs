@@ -24,16 +24,28 @@ namespace OnionDemo
         }
 
         public IConfiguration Configuration { get; }
-
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost:4200");
+                });
+            });
+            //services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddDbContext<ApplicationContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddScoped(typeof(IProductRepo<>), typeof(ProductRepo<>));
-            services.AddTransient<IProductService, ProductService>();
+            services.AddScoped(typeof(ICourseRepo<>), typeof(CourseRepo<>));
+            services.AddTransient<IProductService, IProductService>();
+            services.AddTransient<ICourseService, CourseService>();
 
             //services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
@@ -53,9 +65,13 @@ namespace OnionDemo
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseCors(MyAllowSpecificOrigins);
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            //app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod());
+
+
         }
     }
 }
